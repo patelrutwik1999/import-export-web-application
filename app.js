@@ -7,6 +7,9 @@ const bodyParser = require('body-parser')
 const morgan = require('morgan')
 var expressLayouts = require('express-ejs-layouts');
 
+//importing routes
+const adminLoginRoutes = require('./routers/admin-login')
+
 const app = express()
 
 //MiddleWares
@@ -32,6 +35,8 @@ app.get('/layouts/', function (req, res) {
 //For set layouts of html view
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+
+app.use('/', adminLoginRoutes)
 
 app.get('/form', function (req, res) {
     res.locals = { title: 'Advanced Plugins' };
