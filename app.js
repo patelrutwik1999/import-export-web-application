@@ -8,7 +8,7 @@ const morgan = require('morgan')
 var expressLayouts = require('express-ejs-layouts');
 
 //importing routes
-const adminLoginRoutes = require('./routers/admin-login')
+const adminLoginRoutes = require('./routers/admin-landing-page')
 
 const app = express()
 
