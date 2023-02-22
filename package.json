@@ -19,8 +19,14 @@
   "homepage": "https://github.com/patelrutwik1999/import-export-web-application#readme",
   "dependencies": {
     "body-parser": "^1.20.1",
+    "connect-flash": "^0.1.1",
     "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
     "express": "^4.18.2",
-    "nodemon": "^2.0.20"
+    "express-ejs-layouts": "^2.5.1",
+    "i18n-express": "^1.1.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20",
+    "path": "^0.12.7"
   }
 }
